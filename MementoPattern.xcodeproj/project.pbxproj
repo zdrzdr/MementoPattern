@@ -14,6 +14,9 @@
 		10D42B3C1BA2FEA200914F99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D42B3B1BA2FEA200914F99 /* Images.xcassets */; };
 		10D42B3F1BA2FEA200914F99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10D42B3D1BA2FEA200914F99 /* LaunchScreen.xib */; };
 		10D42B4B1BA2FEA200914F99 /* MementoPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D42B4A1BA2FEA200914F99 /* MementoPatternTests.m */; };
+		10D42B561BA3005400914F99 /* MementoCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D42B551BA3005400914F99 /* MementoCenter.m */; };
+		10D42B5A1BA3006C00914F99 /* FastCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D42B591BA3006C00914F99 /* FastCoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		10D42B5F1BA3053600914F99 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D42B5E1BA3053600914F99 /* Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,13 @@
 		10D42B441BA2FEA200914F99 /* MementoPatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MementoPatternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D42B491BA2FEA200914F99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10D42B4A1BA2FEA200914F99 /* MementoPatternTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MementoPatternTests.m; sourceTree = "<group>"; };
+		10D42B541BA3005400914F99 /* MementoCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MementoCenter.h; sourceTree = "<group>"; };
+		10D42B551BA3005400914F99 /* MementoCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MementoCenter.m; sourceTree = "<group>"; };
+		10D42B581BA3006C00914F99 /* FastCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCoder.h; sourceTree = "<group>"; };
+		10D42B591BA3006C00914F99 /* FastCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastCoder.m; sourceTree = "<group>"; };
+		10D42B5B1BA301A100914F99 /* MementoCenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MementoCenterProtocol.h; sourceTree = "<group>"; };
+		10D42B5D1BA3053600914F99 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		10D42B5E1BA3053600914F99 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,10 @@
 				10D42B331BA2FEA200914F99 /* AppDelegate.m */,
 				10D42B351BA2FEA200914F99 /* ViewController.h */,
 				10D42B361BA2FEA200914F99 /* ViewController.m */,
+				10D42B5D1BA3053600914F99 /* Model.h */,
+				10D42B5E1BA3053600914F99 /* Model.m */,
+				10D42B5C1BA3052400914F99 /* MementoCenter */,
+				10D42B571BA3006C00914F99 /* FastCoder */,
 				10D42B381BA2FEA200914F99 /* Main.storyboard */,
 				10D42B3B1BA2FEA200914F99 /* Images.xcassets */,
 				10D42B3D1BA2FEA200914F99 /* LaunchScreen.xib */,
@@ -117,6 +131,25 @@
 				10D42B491BA2FEA200914F99 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10D42B571BA3006C00914F99 /* FastCoder */ = {
+			isa = PBXGroup;
+			children = (
+				10D42B581BA3006C00914F99 /* FastCoder.h */,
+				10D42B591BA3006C00914F99 /* FastCoder.m */,
+			);
+			path = FastCoder;
+			sourceTree = "<group>";
+		};
+		10D42B5C1BA3052400914F99 /* MementoCenter */ = {
+			isa = PBXGroup;
+			children = (
+				10D42B541BA3005400914F99 /* MementoCenter.h */,
+				10D42B551BA3005400914F99 /* MementoCenter.m */,
+				10D42B5B1BA301A100914F99 /* MementoCenterProtocol.h */,
+			);
+			name = MementoCenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +252,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10D42B561BA3005400914F99 /* MementoCenter.m in Sources */,
 				10D42B371BA2FEA200914F99 /* ViewController.m in Sources */,
 				10D42B341BA2FEA200914F99 /* AppDelegate.m in Sources */,
+				10D42B5F1BA3053600914F99 /* Model.m in Sources */,
+				10D42B5A1BA3006C00914F99 /* FastCoder.m in Sources */,
 				10D42B311BA2FEA200914F99 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
