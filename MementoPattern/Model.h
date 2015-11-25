@@ -11,7 +11,7 @@
 
 @interface Model : NSObject <MementoCenterProtocol>
 
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, copy) NSString *name;
 @property (nonatomic, strong) NSNumber *age;
 
 @end

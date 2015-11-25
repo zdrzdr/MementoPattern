@@ -34,7 +34,7 @@
     
     // 赋值
     model.name   = @"YouXianMing";
-    model.age    = @(27);
+    model.age    = @27;
     
     // 存储状态
     [MementoCenter saveMementoObject:model withKey:@"Model"];
